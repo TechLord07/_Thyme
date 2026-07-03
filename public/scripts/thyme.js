@@ -1065,7 +1065,7 @@ function checkWordmarkScroll() {
   const enterPoint = r.top + r.height * 0.5;
 
   // Exit trigger: 3/4 (75%) of the text height gets pushed below viewport
-  const exitPoint = r.top + r.height * 0.75;
+  const exitPoint = r.top + r.height * 0.5;
 
   if ((_wmState === "hidden" || _wmState === "exiting") && enterPoint < vh) {
     _wmState = "visible";
